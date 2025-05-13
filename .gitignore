@@ -1,0 +1,22 @@
+# ⛔ Do not upload sensitive environment variables
+.env
+
+# 🧪 Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# 📂 Ignore virtual environments (if used)
+venv/
+env/
+.venv/
+
+# 🔄 OS-specific temp files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# 💾 Ignore logs or temp files
+*.log
+*.tmp
+
+# 💻 VSCode settings (optional, but clean)
+.vscode/
