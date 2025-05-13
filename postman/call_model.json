@@ -1,0 +1,46 @@
+{
+  "info": {
+    "_postman_id": "shrey-azure-doc-intel",
+    "name": "Azure Form Recognizer - Call Model",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Analyze PDF with Model",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Ocp-Apim-Subscription-Key",
+            "value": "{{AZURE_FORM_RECOGNIZER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/pdf"
+          }
+        ],
+        "body": {
+          "mode": "file",
+          "file": {}
+        },
+        "url": {
+          "raw": "{{AZURE_FORM_RECOGNIZER_ENDPOINT}}/formrecognizer/documentModels/{{MODEL_ID}}:analyze?api-version=2023-07-31",
+          "host": [
+            "{{AZURE_FORM_RECOGNIZER_ENDPOINT}}"
+          ],
+          "path": [
+            "formrecognizer",
+            "documentModels",
+            "{{MODEL_ID}}:analyze"
+          ],
+          "query": [
+            {
+              "key": "api-version",
+              "value": "2023-07-31"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
