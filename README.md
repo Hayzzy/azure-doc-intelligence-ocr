@@ -1,7 +1,7 @@
 # 🧠 Azure Document Intelligence – Table Extractor
 
 This project uses **Azure Document Intelligence (Form Recognizer)** to extract structured table data from scanned PDF documents — such as invoices, receipts, and forms.  
-The model is trained by **Me** using Azure's no-code UI and works via REST API.
+The model is trained by **Me** using Azure's API and Document Intelligence service and works via REST API.
 
 ---
 
